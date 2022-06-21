@@ -1,0 +1,393 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+#include<string.h>
+#include<windows.h>
+#include<stdlib.h>
+
+int main()
+{
+
+	//char password[20];
+	//int i = 0;
+	//for (; i < 3; i++)
+	//{
+	//	printf("请输入密码》");
+	//	scanf("%s", password);
+	//	if (strcmp(password, "123456") == 0)
+	//	{
+	//		printf("密码正确");
+	//		break;
+	//	}
+	//	else
+	//		printf("密码错误");
+	//}
+
+	//char goal[] = "NICE TO MEET YOU!!!!!!!";
+	//char mod[] = "#######################";
+	//int left = 0;
+	//int right = strlen(goal) - 1;
+	//getchar();
+	//for (; left <= right; left++, right--)
+	//{
+	//	mod[left] = goal[left];
+	//	mod[right] = goal[right];
+	//	Sleep(500);
+	//	system("cls");
+	//	printf("%s\n", mod);
+	//}
+
+	//int arr[10] = { 1,2,3,4,5,6,8,9,10,11 };
+	//int left = 0;
+	//int right = sizeof(arr) / sizeof(arr[0])-1;
+	//int mid=0;
+	//int k = 12;
+	//do
+	//{
+	//	int mid = (left + right) / 2;
+	//	if (arr[mid] == k)
+	//	{
+	//		printf("%d", mid);
+	//		break;
+	//	}
+	//	if (arr[mid] > k)
+	//	{
+	//		right=mid-1;
+	//	}
+	//	if (arr[mid] < k)
+	//		left = mid+1;
+	//} while (left<=right);
+	//if (left > right)
+	//	printf("未能找出");
+
+	//int n[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	//int k = 7;
+	//int i = 0;
+	//int s = sizeof(n) / sizeof(n[0]);
+	//for (; i < s; i++)
+	//{
+	//	if (k == n[i])
+	//	{
+	//		printf("下标为%d", i);
+	//		break;
+	//	}
+	//}
+	//if (s == i)
+	//	printf("未能找到");
+
+//int fac(int n)
+//{
+//	int m = 1;
+//	int i;
+//	for (i = n; i > 0; i--)
+//		m = m * i;
+//	return m;
+//}
+//
+//int main()
+//{
+//	int n;
+//	int i;
+//	int m = 0;
+//	scanf("%d", &n);
+//	for (i = n; i > 0; i--)
+//	{
+//		m = m + fac(i);
+//	}
+//	printf("1!+2!+...+%d!=%d", n, m);
+
+	//int n;
+	//int i;
+	//int m=1;
+	//scanf("%d", &n);
+	//for (i=n; i > 0; i--)
+	//	m = m * i;
+	//printf("%d的阶乘=%d",n,m);
+
+	//int i=0;
+	//do
+	//{
+	//	i++;
+	//	printf("%d ", i);
+	//} 
+	//while (i < 10);
+
+	//for (int i = 1; i < 10; i++)
+	//{
+	//	if (5 == i)
+	//		continue;
+	//	if (8 == i)
+	//		break;
+	//	printf("%d ", i);
+	//}
+
+	//char n;
+	//char password[20];
+	//printf("请输入密码》");
+	//scanf("%s", password);
+	//printf("请确认(Y/N)》");
+	//getchar();
+	//n = getchar();
+	//while (1)
+	//{
+	//	getchar();
+	//	if ('Y' == n)
+	//	{
+	//		printf("已确认");
+	//		break;
+	//	}
+	//	else if ('N' == n)
+	//	{
+	//		printf("取消确认");
+	//		break;
+	//	}
+	//	else
+	//	{
+	//		printf("请重新确认》");
+	//		n = getchar();
+	//	}
+	//}
+
+	//char i;
+	//i = getchar();
+	//putchar(i);
+	//printf("%c", i);
+
+	//int i = 1;
+	//while (1)
+	//{
+	//	if (i > 1000)
+	//		break;
+	//	if (i % 3 % 2)
+	//	{
+	//		i++;
+	//	}
+	//	else
+	//	{
+	//		i++;
+	//		continue;
+	//	}
+	//	printf("%d ", i-1);
+	//}
+
+	//int day;
+	//scanf("%d", &day);
+	//switch (day)  switch后必须是整形表达式
+	//{
+	//case 1:
+	//	printf("Monday");
+	//	break;
+	//case 2:
+	//	printf("Tuesday");
+	//	break;
+	// ...
+	//case 6:
+	//case 7:
+	//	printf("Holiday");
+	//	break;
+	//default:
+	//	printf("Fault");
+	//	break;
+	//}
+
+	//int n;
+	//scanf("%d", &n);
+	//if (n % 2)
+	//	printf("奇数");
+	//else
+	//	printf("偶数");
+
+	//int i = 1;
+	//while (i <= 100)
+	//{
+	//	if (i % 2)
+	//		;
+	//	else
+	//		printf("%d ", i);
+	//	i++;
+	//}
+
+	//int age;
+	//scanf("%d", &age);
+	//if (age < 18 && age>0)
+	//	printf("未成年");
+	//else
+	//{
+	//	if (age >= 18 && age < 60)
+	//		printf("成年-青壮年");
+	//	else if (age >= 60)
+	//		printf("成年-老年");
+	//}
+
+	//struct book
+	//{
+	//	char name[30];
+	//	char writer[10];
+	//	short price;
+	//};
+	//int main()
+	//{
+	//struct book B1={"C语言程序设计","谭浩强",55};
+	//struct book* pB1 = &B1;
+	//printf("书名：%s\n", B1.name);
+	//printf("作者：%s\n",(*pB1).writer);
+	//printf("价格：%d元\n", pB1->price);
+	//strcpy(B1.name, "C++");
+	//printf("修改后名称：%s\n", pB1->name);
+
+	//int a = 4;
+	//int* p = &a;
+	//printf("%p\n", p);
+	//*p = 10;
+	//printf("%d", a);
+	//char b = 'w';
+	//char* pb = &b;
+	//*pb = 'e';
+	//printf("%c", b);
+
+//#define Max(x,y) (x>y?x:y)
+//	int a = 1;
+//	int b = 2;
+//	int c = Max(a, b);
+//	printf("%d\n", c);
+
+//void test()
+//{
+//	static int a = 0;  static让局部变量生命周期变长
+//	++a;
+//	printf("%d\n", a);
+//}
+//
+//int main()
+//{
+//	int i = 0;
+//	while (i < 5)
+//	{
+//		i++;
+//		test();
+//	}
+//
+	//typedef const int cont;
+	//cont a = 4;
+	//printf("%d", a);
+
+	//int a = (int)3.12;
+
+//int max(int a, int b)
+//{
+//	if (a >= b)
+//		return("%d\n", a);
+//	else
+//		return("%d\n", b);
+//}
+//
+//int main()
+//{
+//	int n1;
+//	int n2;
+//	scanf("%d%d", &n1, &n2);
+//	int v = max(n2, n1);
+//	printf("%d\n", v);
+
+	//int a = 10;
+	//int b = 20;
+	//int max = (a >= b ? a : b);
+	//printf("%d", max);
+
+	//int a = 0;
+	//a = a + 10;
+	//a += 10;
+
+	//（二进制）位操作：
+	//int a = 6;  110
+	//int b = 3;  011
+	//printf("%d\n", a&b);  010      &按位与：有0则0
+	//printf("%d\n", a | b);  111    |按位或：有1则1
+	//printf("%d\n", a^b);  101      ^按位异或：同0异1
+
+	//int level = 1;
+	//while (level <= 3000)
+	//{
+	//	level = level << 1;
+	//	printf("practice...  >> %d\n", level);
+	//}
+	//if (level > 3000)
+	//	printf("U WIN !");
+
+	//int a = 3;  “《n”表示二进制数字左移n位，《2即乘以2
+	//int b = a << 2;
+	//printf("%d", b);
+
+	//int a = 5 % 2;  “%”表示取余数
+	//printf("%d", a);
+
+	//int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	//printf("%d\n", arr[5]);
+	//int i = 0;
+	//while (i < 9)
+	//{
+	//	printf("%d,", arr[i]);
+	//	i++;
+	//}
+	//printf("%d", arr[i]);
+
+//	int Add(int x, int y)  写在主函数外
+//	{
+//		int z = x + y;
+//		return z;
+//	}
+//int main()
+//{
+//	int n1 = 13;
+//	int n2 = 45;
+//	int n3 = 54;
+//	int n4 = 78;
+//	int sum;
+//	sum = Add(n1, n2);
+//	printf("sum=%d\n", sum);
+//
+	/*int line = 0;
+	while (line <= 20000)  while用{}而if不用
+	{
+		printf("line UP;%d\n", line);
+		line++;
+		line++;
+	}
+	if (line >= 20000)
+		printf("CONGRATULATIONS!");*/
+
+		//int answer;
+		//printf("Who R U?\nAnswer!NOW!\n(1/0)>:");
+		//scanf("%d", &answer);
+		//if (answer == 1)
+		//	printf("ok");
+		//else
+		//	printf("sorry");
+
+		//printf("%s\n","sdf");
+		//printf("%c\n",'\'');
+
+		//char arr[] = "asdf";
+		//printf("%s\n", arr);
+		//char acc[] = { 'a','s','d','f','\0'};
+		//printf("%s\n", acc);
+		//printf("%d\n", strlen(arr));
+		//printf("%d\n", strlen(acc));
+
+		//enum color
+		//{
+		//	red,
+		//	blue,
+		//	yellow
+		//};
+		//enum color c = red;
+		//printf("%d\n", red);
+
+		//int n1,n2,n3;
+		//const int n4 = 5;
+		//int sum;
+		//scanf("%d%d%d", &n1, &n2, &n3);
+		//sum = n1 + n2 + n3 + n4;
+		//printf("sum = %d\n", sum);
+return 0;
+}
