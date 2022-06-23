@@ -1,0 +1,111 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+#include<string.h>
+#include<windows.h>
+#include<stdlib.h>
+#include<math.h>
+#include<time.h>
+
+int srch(int x, char y[])
+{
+	int l = 0;
+	int r = sizeof(y) / sizeof(y[0])-1;
+	do
+	{
+		int m = (l + r) / 2;
+		if (y[m] == x)
+		{
+			return m;
+			break;
+		}
+		if (y[m] < x)
+			l = m + 1;
+		if (y[m] > x)
+			r = m - 1;
+	}
+	while (l<=r);
+	if (l > r)
+		return -1;
+}
+
+//判断闰年
+//int run(int x)
+//{
+//	if ((x % 4 == 0 && x % 100) || (x % 400 == 0))
+//		return 1;
+//	else
+//		return 0;
+//}
+
+//判断素数
+//void jdg(int x)
+//{
+//	int i = 3;
+//	if (x % 2 == 0 && x > 2)
+//		return 0;
+//	else {
+//		for (; i <= sqrt(x); i += 2)
+//		{
+//			if (x%i == 0)
+//				break;
+//		}
+//		if (i > sqrt(x))
+//			return 1;
+//		else
+//			return 0;
+//	}
+//}
+
+int main()
+{
+	//int n = 105;
+	//if(jdg(n));
+	//printf("%d是素数", n);
+	//int m = 1900;
+	//if(run(m));
+	//printf("%d是闰年", m);
+	char arr[11] = { 1,2,3,5,6,8,9,11,14,16,17 };
+	int a = 8;
+	if (srch(a, arr) == -1)
+		printf("未能找出");
+	if (srch(a, arr) != -1)
+		printf("已找出，下标为%d", srch(a, arr));
+
+//交换函数（用指针）
+//void swap(int* pa,int* pb) 
+//{
+//	int tem;
+//	tem = *pa;
+//	*pa = *pb;
+//	*pb = tem;
+//}
+//
+//int main()
+//{
+//	int a = 22, b = 34;
+//	int* pa=&a, pb=&b;
+//	printf("a=%d,b=%d\n", a, b);
+//	swap(pa, pb);
+//	printf("a=%d,b=%d\n", a, b);
+
+	//char arr[15] = "abcdefghijklmn";
+	//memset(arr, '*', 5);
+	//printf("%s\n", arr);
+
+	//char arr1[4] = "abc";
+	//char arr2[20] = "$$$$$";
+	//strcpy(arr2, arr1);  连同字符串结尾的\0一起拷贝
+	//printf("%s", arr2);
+
+//关机程序
+//	char arr[20];
+//	system("shutdown -s -t 60");
+//	printf("电脑将于60秒内关机!\n输入【我是猪】取消关机!");
+//again:
+//	printf("\n请输入=>");
+//	scanf("%s", &arr);
+//	if (strcmp(arr, "我是猪") == 0)
+//		system("shutdown -a");
+//	else
+//		goto again;
