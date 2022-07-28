@@ -1,0 +1,37 @@
+	//srand((unsigned int)time(NULL));
+	//int k = rand()%200+1;
+	//int m;
+	//cout << "劲爆猜数字游戏" << endl<< "请输入数字(1`200)" << endl;
+	//cin >> m;
+	//while (m != k)
+	//{
+	//	switch (m > k ? 1 : 2)
+	//	{
+	//	case 1:
+	//		cout << "猜大了"<<endl;
+	//		break;
+	//	case 2:
+	//		cout << "猜小了"<<endl;
+	//		break;
+	//	}
+	//	cout << "请重新输入" << endl;
+	//	cin >> m;
+	//}
+	//if(m==k)
+	//cout << "恭喜你 已猜中 答案为" << k;
+
+	//水仙花数
+	//cout << "三位数的水仙花数如下\n";
+	//int i = 100;
+	//do {
+	//	int a = i / 100;
+	//	int b = i / 10 % 10;
+	//	int c = i % 10;
+	//	a = a * a * a;
+	//	b = b * b * b;
+	//	c = c * c * c;
+	//	int m = a + b + c;
+	//	if (m == i)
+	//		cout << i << " ";
+	//	i++;
+	//} while (i < 1000);
